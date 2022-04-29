@@ -1,0 +1,264 @@
+/* imports for fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Open+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Libre+Bodoni:ital@1&family=Open+Sans:wght@500&family=Oswald:wght@200&display=swap');
+
+/* header */
+header{
+    background-color: #595959;
+    color: azure;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    margin-top: -20px;;
+    margin-left: -12px;
+    margin-right: -6px;
+    margin-bottom: 0px;
+}
+
+header p{
+    font-size: 35px;
+    font-family: 'Caveat', cursive;
+    opacity: 0.9;
+}
+
+header h3{
+    font-size: 45px;
+    font-family: 'Libre Bodoni', serif;
+}
+
+/* mavigation style */
+nav{
+    background: #333;
+    opacity: 0.5;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+}
+
+nav ul:after{
+    content: "";
+    display: inline;
+    clear: both;
+}
+
+nav li{
+    list-style-type: none;
+    margin: 0 10px;
+    float: right;
+    font-family: 'Caveat', cursive;
+}
+
+nav a{
+    color: hsl(180, 100%, 75%);
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Caveat', cursive;
+    text-decoration: double;
+}
+nav a:hover{
+    color: #ff7849;
+}
+/* end of navigation style */
+
+/* global styles */
+p{
+    font-family: 'Oswald', sans-serif;
+    color: #e8effc;
+}
+
+hr{
+    border-color: #ff7849;
+    opacity: 0.3;
+    border-style: solid;
+}
+
+h3{
+    font-size: 35px;
+    font-style: italic;
+    color: #ff7849;
+    font-family: 'Caveat', cursive;
+}
+
+h2{
+    color: aquamarine;
+    /* font-family: 'Libre Bodoni', serif; */
+    font-family: 'Caveat', cursive;
+    font-size: 33px;
+}
+
+body{
+    background-color: #1c2e4a;
+    color: aliceblue;
+}
+/* end of global styles */
+
+/* specific styles*/
+.image-me{
+    float: left;
+    opacity: 0.2;
+    margin-left: -6px;
+    margin-right: 6px;
+    border-radius: 100%;
+    border-style: hidden;
+    border-width: 0px;
+ }
+
+.about-me-section span{
+    color: rgb(65, 152, 152);
+}
+
+.education-section h2{
+    padding-top: 30px;
+}
+
+.about-me-section p{
+    padding-top: 20px;
+}
+
+.skills-section li{
+    margin-left: -20px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.school-name{ /*need to do it only for this specific one*/
+    font-weight: bold;
+    color: #93bebe;
+}
+
+.project-name{
+    font-weight: bold;
+    color: #93bebe;
+}
+/* end of style section */
+
+/* footer */
+footer{
+    background-color: #595959;
+    margin-left: -7px;
+    margin-right: -7px;
+    margin-bottom: -7px;
+    /* padding: 50px; */
+    text-align: center;
+}
+
+.contact-section{
+    list-style-type: none;
+    padding: 0;
+    /* display: flex; */
+    justify-content: center;
+    font-size: 25px;
+    font-family: 'Caveat', cursive;
+}
+.contact-section a{
+    padding: 15px;
+    display: inline-block;
+    color: rgb(216, 228, 82);
+    text-decoration: none;
+}
+
+.contact-section a:hover{
+    color: #ff7849;
+}
+/* end of footer */
+
+/* media query */
+
+/* when screen is greater then 375 pixels */
+@media screen and (min-width: 375px){
+    .image-me{
+        width: 124px;
+        margin-bottom: 10px;
+    }
+
+    .education-section h3{
+        float: left;
+        clear: left;
+        margin-right: 25px;
+    }
+    .education-section h2{
+        margin-top: 25px;
+        margin-left: 0px;
+    }
+    
+    .school-name{ /* need to do it only for this specific one */
+        margin-top: 50px;
+    }
+    
+    .about-me-section p{
+        margin-top: -30px;
+    }
+
+    .about-me-section p {
+      font-size: large;
+    }
+
+    hr{
+        width: 100%;
+    }
+}
+
+/* when screen is smaller then 780 pixels */
+@media screen and (max-width: 780px){
+    .image-me{
+        float: none;
+        margin-bottom: -30px;
+        border-radius: 10%;
+        margin-left: 0px;
+    }
+    
+    /* .navmenu a{
+        font-size: 20px;
+        margin: -30px;
+        padding-left: 10px;
+    } */
+
+    .education-section h3{
+        float: none;
+        margin-right: 0px;
+    }
+
+    .education-section h2{
+        margin-top: 0%;
+        margin-bottom: -20px;
+    }
+
+    .school-name{
+        margin-top: -10px;
+    }    
+
+    .contact-section a{
+        display: block;
+        padding: 0px;
+    }
+    .contact-section{
+        display: block;
+    }
+}
+/* when screen size is greater then 300px, specific for images*/
+@media screen and (min-width: 300px){
+    /* projects section */
+    .project-http{
+        width: 300px;
+    }
+
+    .project-quicksort{
+        width: 300px;
+    }
+}
+
+/* when screen size is smaller then 630px, specific for images */
+@media screen and (max-width: 620px){
+    /* projects section */
+    .project-http{
+        width: 150px;
+    }
+
+    .project-quicksort{
+        width: 150px;
+    }
+}

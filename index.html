@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <!-- head -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Frontend Portfolio</title>
+</head>
+<!-- body -->
+<body>
+    <!-- header -->
+    <header>
+
+        <h3>Frontend Development Portfolio</h3>
+        <p>
+            Yes, this is me, Alexander a frontend developer 
+            that find a solution to every challenge transforming 
+            everything into code. 
+        </p>
+
+        <nav>
+            <ul>
+                <li><a href="#aboutmeID">About me</a></li>
+                <li><a href="#educationID">Education</a></li>
+                <li><a href="#skillsID">Skills</a></li>
+                <li><a href="#contactmeID">Contact me</a></li>
+                <li><a href="#projectsID">Projects</a></li>
+            </ul>
+        </nav>
+
+    </header>
+        <!-- about me section -->
+    <div id="aboutmeID">
+
+        <section class="about-me-section">
+
+            <h2>About me</h2>
+
+            <img class="image-me" src="images/me.jpeg" 
+            alt="This is a picture of me" width="200" height="200">
+            
+            <h3>Who am i</h3>
+            <p>
+             I'm <span>Alexander Casado</span> a software developer that anjoy to code and
+             solve problems, my jurney started back in 2019 i picked C/C++ to start the jurney,
+             i learn the basics of both, Data Structure and then i went deep into OOP and Desing Pattern,
+             after i learned all that i decided to learn Qt that is a very complete C++ Framework.
+            </p>
+        
+        </section>
+    </div>
+        <!-- education section -->
+    <div id="educationID">
+
+        <hr>
+
+        <section class="education-section">
+
+            <h2>Education</h2>
+
+            <h3>Primary School</h3>
+
+               <p class="school-name">Argentina Mateo Lara (2007-2009)</p> 
+                <p>
+                    The degree was completed with a high efficiency
+                     and performance in matters as chemistry, 
+                    Computers Science, Spanish gram and History.
+                </p>
+
+            <h3 class="higher-education">Higher Education</h3>
+
+            <p class="school-name">Dominican University O&M (2009-2012)</p> 
+            <p>
+                The grade was half completed and corresponded matters like,
+                Physics, Math, Statistics, Office Systems and Programming
+                has been taken and submitted with successfull score.
+            </p>
+
+        </section>
+    </div>
+        <hr>
+    <!-- projects section -->
+    <div id="projectsID">
+
+        <section class="project-section">
+
+            <h2>Projects</h2>
+               <p class="project-name">HTTP Server (2022)</p> 
+
+              <a href="./images/DB.png"> <img class="project-http" 
+                src="./images/DB.png" width="300px" height="150px" 
+               alt="adding data to DB from a UI DB manager"> </a>
+
+               <a href="./images/Rest.png"> <img class="project-http" 
+                src="./images/Rest.png" width="300px" height="150px"
+               alt="getting JSON from REST API"> </a>
+
+               <p class="project-description">
+
+                    This is a HTTP Server Wrapper implemented with Qt Framework and C++ 11. Server support basics HTTP functionalities
+                     and is scalable it can handle 16,000 connections per client, 
+                     this is possible because in te bone code base multithreaded is 
+                     implemented in the server. The requests are handle with low level 
+                     sockets and can read and write back/forward UTF-8 unicode and serve 
+                     statics files like .html and .css also has JSON support.
+                </p>
+
+                <p class="project-name">QuickSort (2022)</p> 
+
+                <a href="./images/quickunsorted.png"> <img class="project-quicksort" 
+                    src="./images/quickunsorted.png" width="300px" height="150px" 
+               alt="unsorted elements"> </a>
+
+               <a href="./images/quicksortedDefault.png"> <img class="project-quicksort" 
+                src="./images/quicksortedDefault.png" width="300px" height="150px"
+               alt="sorted elements"> </a>
+
+                 <p class="project-description">
+                    QuickSort is a software that sort any elements size from 1 to 2,000 elements
+                     even more if modified. It has implemented a quickSort algorithm n*log(n),
+                      its not linear, no the best but it's very fast working with a high number
+                       of elements. the software is user dynamic, it can be changed by 
+                       the user: bars colours, number of elements and elements size. 
+                       programming language used is C++ as backend and QML for frontend. 
+                       Files attached .png format
+                 </p>
+
+                 <p class="project-name">Port Scanner (2021)</p> 
+
+               <a href="./images/portScanner.png"> <img class="project-portscanner" 
+                src="./images/portScanner.png" width="300px" height="150px"
+               alt="port scanner image"> </a>
+
+                 <p class="project-description">
+                    PortScanner is a Network scanner to scan ports from 1 to port MAX_PORT
+                     specified by user, PortScanner use low level sockets to send and
+                      receive connection request to B host, works in LAN and is implemented with
+                       low level multithreading. QtCore C++11 and Qt Widget for UI.
+                 </p>
+
+                 <p class="project-name">Weather Information System (2021)</p> 
+
+                 <a href="./images/weatherInfoAll.png"> <img class="project-portscanner" 
+                    src="./images/weatherInfoAll.png" width="300px" height="150px"
+                   alt="weather info software image"> </a>
+                    
+                     <p class="project-description">
+                        Weather Info is a weather info software that retrieve weather 
+                        information from 600 + places including countries and popular cities 
+                        in the world from Network resources using REST API capabilities and is 
+                        Event Driven oriented using Qt Framework and C++. It has a network remote 
+                        capability able to connect in a LAN topology with any TCP Client and 
+                        from any device, it can receives commands from a local device via 
+                        Wireless or Cable and it reply echo back to the client reporting 
+                        how may data has been retrieved from remote API. 
+                        Software can make reports and read from saved reports data from a NoSQL DB. 
+                     </p>
+
+        </section>
+
+    </div>
+        <hr>
+        <!-- skills section -->
+    <div id="skillsID">
+        <section class="skills-section">
+
+            <h2>Skills</h2>
+        <ul> 
+            <li>C/C++</li>
+            <li>Qt/QML Framework</li>             
+            <li>MySQL (SQLite)</li>
+            <li>OOP</li>
+            <li>Design Pattern</li>
+            <li>REST API</li>
+            <li>HTTP</li>
+            <li>Networking</li>
+            <li>Multithreading</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>      
+        </section>
+    </div>
+                <!-- footer -->
+            <footer>
+
+                <h2>Contact me</h2>
+
+    <div id="contactmeID">            
+         <section class="contact-section">
+
+            <a href="https://www.linkedin.com/in/alexander-casado-castillo-07a33786/">Linkedin</a>
+            <a href="https://github.com/JACCCostring">GitHub</a>
+            <a href="costring20@gmail.com">costring20@gmail.com</a>
+
+            </Footer>
+
+        </section>
+    </div>
+
+</body>
+</html>
